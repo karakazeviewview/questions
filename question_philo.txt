@@ -1,0 +1,49 @@
+疑問点
+idが奇数なら右のフォークを持つ?
+idが偶数なら左のフォークを持つ?
+
+check.c
+引数に、マイナスの値や、INT_MAX、INT_MINの範囲外の値が来ても弾けるか?
+
+philosophers.h
+例えばp_thread型変数のthread_monitorなど、構造体のメンバは、t_philo型とt_data型のどちらでも良い場合があるのか?
+
+create_thread.c
+l20. 構造体メンバがさらに構造体メンバを参照という、かなり入れ子になって参照する必然性は?
+l24. エラーハンドリング？
+l49. 構造体型の変数の変数?
+
+eat_sleep_think.c
+l17. なぜusleep(801)?
+philosophers.h
+typedef struct s_philo構造体の中に、struct s_data	*data;
+typedef struct s_data構造体の中に、struct s_philo	philo[MAX_PHILO];
+
+eat_sleep_think.c
+最初の哲学者は左のフォークにロックをかけて、右のフォークを持つ?
+l17, 18, 19は? usleepのズレは10マイクロ秒以内に?
+l25. 哲学者が1人またはprint_state()関数の戻り値がfalseの場合?それともprint_stae()がtrueもfalseも返さない場合?
+
+error.c
+
+
+init.c
+
+
+main.c
+
+
+monitor.c
+
+
+other_utils.c
+
+
+utils.c
+
+
+
+
+
+初期化されたmutexは、ロック解除状態になる。
+thread_joinはスレッドの終了待ち。
